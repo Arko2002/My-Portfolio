@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="cv.pdf" download>Download CV</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <section id="home">
+                <div class="infoContainer">
+                    <div class="devInfo">
+                        <div class="hello">Hello, I am</div>
+                        <div class="name">Arkodeep Podder</div>
+                        <div class="about">Engineer, Front-end Web Developer</div>
+                    </div>
+                    <div class="devPic"><img src="profile.png" alt="Arkodeep Podder"></div>
+                </div>
+            </section>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am an Electronics and Communication Engineer. I have done my B.Tech from Heritage Institute of Technology and schooling from Aditya Academy Senior Secondary. I have a DGPA of 8.45 in B.Tech. Apart from studies, I was also the Secretary of the Rotaract Club of my college. My hobbies include playing cricket, watching movies, and writing stories.</p>
+                <h2>My Skills</h2>
+                <div class="skillcontainer">
+                    <div class="skillitem">
+                        <h3>HTML ::</h3>
+                        <div class="skill hundred"></div>
+                    </div><br>
+                    <div class="skillitem">
+                        <h3>CSS  ::</h3>
+                        <div class="skill seventyFive"></div>
+                    </div><br>
+                    <div class="skillitem">
+                        <h3>JavaScript  ::</h3>
+                        <div class="skill twentyFive"></div>
+                    </div><br>
+                    <div class="skillitem">
+                        <h3>C++  ::</h3>
+                        <div class="skill seventyFive"></div>
+                    </div><br>
+                    <div class="skillitem">
+                        <h3>DBMS  ::</h3>
+                        <div class="skill seventyFive"></div>
+                    </div><br>
+                    <div class="skillitem">
+                        <h3>SQL  ::</h3>
+                        <div class="skill seventyFive"></div>
+                    </div><br>
+                </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h4>Project 1- Home Automation System using NodeMCU and Relay Module</h4>
+                    <p>Home Automation System utilizing NodeMCU and Relay Modules integrates IoT technology to streamline home management. NodeMCU, powered by the ESP8266 microcontroller, connects seamlessly to the home Wi-Fi network, enabling remote control and automation of various electrical appliances. The Relay Module acts as an intermediary between NodeMCU's low-voltage signals and high-power devices like lights, fans, and other appliances.</p>
+                    <p>This system empowers users to control their home environment from anywhere via a mobile app or web interface, offering convenience and flexibility. Automation features allow for scheduling routines based on time or sensor inputs, such as motion detection or environmental conditions. Safety mechanisms ensure appliances operate within safe parameters, enhancing overall security and efficiency.</p>
+                </div>
+                <div class="project">
+                    <h4>Project 2- Personal Portfolio Website</h4>
+                    <p>Personal Portfolio Website built with HTML, CSS, and JavaScript is a dynamic showcase of an individual's skills and achievements in a digital format. The website typically features a clean and modern design, emphasizing usability and visual appeal to engage visitors effectively. Sections include a home page introducing the individual, an about me section detailing their background and expertise, a portfolio showcasing projects with descriptions and images, and a contact page for inquiries and networking.</p>
+                    <p>HTML structures the content and layout of the website, CSS styles ensure a cohesive design with fonts, colors, and responsive layouts for different devices, while JavaScript adds interactivity such as animated transitions, dynamic elements like sliders or modal windows for project details, and form validation for the contact page. Together, these technologies create a professional and personalized platform for showcasing work, fostering connections, and establishing a strong online presence in the competitive job market or freelance industry.</p>
+                </div>
+            </section>
+            <section id="contact">
+                
+                    <h2>Contact Me</h2>
+                    <form id="contact-form">
+                        <label for="name"><p>Name:</p></label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email"><p>Email:</p></label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message"><p>Message:</p></label>
+                        <textarea id="message" name="message" required></textarea>
+                        <br><br><br>
+                        <button type="submit">Send</button>
+                    </form>
+                    <div id="form-message"></div>
+                
+            </section>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

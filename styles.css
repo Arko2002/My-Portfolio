@@ -1,0 +1,304 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40;
+    color: white;
+    width: 320px;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 18px 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #495057;
+}
+
+/* Content styles */
+.content {
+    margin-left: 320px;
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    width: calc(100% - 320px);
+}
+
+.content section {
+    width: 77vw;
+    height: 95vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 18px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.content h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.content h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.infoContainer {
+    height: 58vh;
+    width: 100%;
+    margin: 144px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+}
+
+.hello {
+    font-size: 55px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.about {
+    margin-top: 23px;
+    font-size: 40px;
+}
+
+.devPic img {
+    max-width: 100%;
+    height: 52vh;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skillcontainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.skillitem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill {
+    width: 265px;
+    height: 26px;
+    border: 2px solid black;
+}
+
+.hundred {
+    width: 265px;
+    background-color: red;
+}
+
+.seventyFive {
+    width: 200px;
+    background-color: blue;
+}
+
+.fifty {
+    width: 120px;
+    background-color: black;
+}
+
+.twentyFive {
+    width: 50px;
+    background-color: green;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+form button:hover {
+    background-color: #495057;
+}
+
+#form-message {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    .sidebar ul li {
+        font-size: 20px;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .infoContainer {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .devPic img {
+        width: 80%;
+        height: auto;
+    }
+
+    .hello {
+        font-size: 35px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .about {
+        font-size: 25px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+
+    .content h4 {
+        font-size: 24px;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .skillitem {
+        width: 80%;
+    }
+}
